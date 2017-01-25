@@ -1,0 +1,35 @@
+// This file is part of the LIN3S CSS Grid project.
+//
+// Copyright (c) 2016-2017 LIN3S <info@lin3s.com>
+//
+// For the full copyright and license information, please view the LICENSE
+// file that was distributed with this source code.
+//
+// @author Gorka Laucirica <gorka@lin3s.com>
+// @author Mikel Tuesta <mikel@lin3s.com>
+
+@function lower-bound($range) {
+  @if length($range) <= 0 {
+    @return 0;
+  }
+  @return nth($range, 1);
+}
+
+@function upper-bound($range) {
+  @if length($range) < 2 {
+    @return 999999999999;
+  }
+  @return nth($range, 2);
+}
+
+@function media-query-by-range($range, $type: 'up', $media-type: 'only screen') {
+  @if ($type == 'up' and lower-bound($range) == 0) {
+    @return '#{$media-type}';
+  } @else if ($type == 'up') {
+    @return '#{$media-type} and (min-width:#{lower-bound($range)}px)';
+  } @else if ($type == 'only') {
+    @return '#{$media-type} and (min-width:#{lower-bound($range)}px) and (max-width:#{upper-bound($range)}px)';
+  } @else {
+    @warn 'Type #{$type} not supported';
+  }
+}

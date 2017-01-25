@@ -1,0 +1,37 @@
+// This file is part of the LIN3S CSS Grid project.
+//
+// Copyright (c) 2016-2017 LIN3S <info@lin3s.com>
+//
+// For the full copyright and license information, please view the LICENSE
+// file that was distributed with this source code.
+//
+// @author Gorka Laucirica <gorka@lin3s.com>
+
+$row-column-background: #ddd;
+$row-column-border: #eee;
+$row-column-height: 40px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+.row__column {
+  background: $row-column-background;
+  border-left: 1px solid $row-column-border;
+  border-right: 1px solid $row-column-border;
+  height: $row-column-height;
+  line-height: $row-column-height;
+  text-align: center;
+}

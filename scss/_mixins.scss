@@ -1,0 +1,72 @@
+// This file is part of the LIN3S CSS Grid project.
+//
+// Copyright (c) 2016-2017 LIN3S <info@lin3s.com>
+//
+// For the full copyright and license information, please view the LICENSE
+// file that was distributed with this source code.
+//
+// @author Gorka Laucirica <gorka@lin3s.com>
+// @author Mikel Tuesta <mikel@lin3s.com>
+
+@import './variables';
+@import './placeholders';
+
+@mixin grid__column($columns) {
+  flex: 1 1 #{100% / $column-count * $columns};
+  max-width: #{100% / $column-count * $columns};
+  padding-left: #{$column-gutter / 2};
+  padding-right: #{$column-gutter / 2};
+  width: 100%;
+}
+
+@mixin grid-column-for-media-query($name, $cols, $media-query) {
+  @media #{$media-query} {
+    @each $col in $cols {
+      .row__column--#{$name}-#{$col} {
+        flex: 1 1 #{100% / $column-count * $col};
+        max-width: #{100% / $column-count * $col};
+      }
+    }
+  }
+}
+
+@mixin grid__column--push($columns, $column-count: 12) {
+  margin-left: calc(#{100% / $column-count * $columns});
+}
+
+@mixin grid-column-push-for-media-query($name, $cols, $media-query) {
+  @media #{$media-query} {
+    @each $col in $cols {
+      .row__column-push--#{$name}-#{$col} {
+        @include grid__column--push($col);
+      }
+    }
+  }
+}
+
+@mixin grid__row($selector, $grid-type: 'fluid') {
+  @if ($grid-type == 'fluid') {
+    #{$selector} {
+      @extend %grid__row;
+      @extend %grid__row--fluid;
+    }
+  } @else {
+    @if (map-has-key($grid, $grid-type)) {
+      #{$selector} {
+        @extend %grid__row;
+      }
+
+      // scss-lint:disable NameFormat
+      @each $option in map_get($grid, $grid-type) {
+        @media #{media-query-by-range(nth($option,1))} {
+          #{$selector} {
+            max-width: nth($option, 2) + $column-gutter;
+          }
+        }
+      ;
+      }
+    } @else {
+      @warn '#{$grid-type} not found in $grid map, check your grid type settings';
+    }
+  }
+}
