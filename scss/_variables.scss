@@ -1,12 +1,13 @@
-// This file is part of the LIN3S CSS Grid project.
+// This file is part of the LIN3S CSS Grid library.
 //
 // Copyright (c) 2016-2017 LIN3S <info@lin3s.com>
 //
 // For the full copyright and license information, please view the LICENSE
 // file that was distributed with this source code.
 //
-// @author Gorka Laucirica <gorka@lin3s.com>
-// @author Mikel Tuesta <mikel@lin3s.com>
+// @author Gorka Laucirica <gorka.lauzirika@gmail.com>
+// @author Beñat Espiña <benatespina@gmail.com>
+// @author Mikel Tuesta <mikeltuesta@gmail.com>
 
 @import './functions';
 
@@ -54,11 +55,11 @@ $adaptive-row-xlarge-width: 1170 !default;
 $adaptive-row-xxlarge-width: $fluid-row-width;
 
 $grid: (
-   'adaptive': (
-     ($small-range, $adaptive-row-small-width),
-     ($medium-range, $adaptive-row-medium-width),
-     ($large-range, $adaptive-row-large-width),
-     ($xlarge-range, $adaptive-row-xlarge-width),
-     ($xxlarge-range, $adaptive-row-xxlarge-width)
-   )
+  'adaptive': (
+    ($small-range, $adaptive-row-small-width),
+    ($medium-range, $adaptive-row-medium-width),
+    ($large-range, $adaptive-row-large-width),
+    ($xlarge-range, $adaptive-row-xlarge-width),
+    ($xxlarge-range, $adaptive-row-xxlarge-width)
+  )
 ) !default;

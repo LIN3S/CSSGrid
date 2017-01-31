@@ -9,22 +9,5 @@
 // @author Beñat Espiña <benatespina@gmail.com>
 // @author Mikel Tuesta <mikeltuesta@gmail.com>
 
-@import './variables';
-
-%grid__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-%grid__row--fluid {
-  @extend %grid__row;
-  max-width: $fluid-row-width + $column-gutter;
-}
-
-%grid__row--fluid-one-column {
-  @extend %grid__row--fluid;
-  padding-left: $column-gutter;
-  padding-right: $column-gutter;
-}
+@import './row';
+@import './theme';

@@ -1,17 +1,14 @@
-# This file is part of the LIN3S CS library.
+# This file is part of the LIN3S CSS Grid library.
 #
-# Copyright (c) 2015-2017 LIN3S <info@lin3s.com>
+# Copyright (c) 2016-2017 LIN3S <info@lin3s.com>
 #
 # For the full copyright and license information, please view the LICENSE
 # file that was distributed with this source code.
 #
 # @author Beñat Espiña <benatespina@gmail.com>
 
-scss_files: "**/*.scss"
+scss_files: '**/*.scss'
 plugin_directories: ['.scss-linters']
-
-# List of gem names to load custom linters from (make sure they are already installed)
-plugin_gems: []
 
 linters:
   BangFormat:
@@ -25,7 +22,7 @@ linters:
 
   BorderZero:
     enabled: true
-    convention: zero # or `none`
+    convention: zero
 
   ColorKeyword:
     enabled: true
@@ -50,7 +47,7 @@ linters:
 
   ElsePlacement:
     enabled: true
-    style: same_line # or 'new_line'
+    style: same_line
 
   EmptyLineBetweenBlocks:
     enabled: true
@@ -68,11 +65,11 @@ linters:
 
   HexLength:
     enabled: true
-    style: short # or 'long'
+    style: short
 
   HexNotation:
     enabled: true
-    style: lowercase # or 'uppercase'
+    style: lowercase
 
   HexValidation:
     enabled: true
@@ -91,12 +88,12 @@ linters:
   Indentation:
     enabled: true
     allow_non_nested_indentation: false
-    character: space # or 'tab'
+    character: space
     width: 2
 
   LeadingZero:
     enabled: true
-    style: exclude_zero # or 'include_zero'
+    style: exclude_zero
 
   MergeableSelector:
     enabled: true
@@ -105,7 +102,7 @@ linters:
   NameFormat:
     enabled: true
     allow_leading_underscore: true
-    convention: hyphenated_lowercase # or 'camel_case', or 'snake_case', or a regex pattern
+    convention: hyphenated_lowercase
     mixin_convention: '^([\.\%]?[a-z]*[-]?[a-z0-9\-]*)(\.[a-z0-9\-]*)?(__[a-z0-9]*[-]?[a-z0-9\-]*)?(--[a-z0-9]*[-]?[a-z0-9\-]*)?(\:[a-z]*)*$'
     mixin_convention_explanation: BEM pattern
     placeholder_convention: '^([\.\%]?[a-z]*[-]?[a-z0-9\-]*)(\.[a-z0-9\-]*)?(__[a-z0-9]*[-]?[a-z0-9\-]*)?(--[a-z0-9]*[-]?[a-z0-9\-]*)?(\:[a-z]*)*$'
@@ -146,7 +143,7 @@ linters:
 
   SelectorFormat:
     enabled: true
-    convention: hyphenated_BEM # or 'strict_BEM', or 'hyphenated_lowercase', or 'snake_case', or 'camel_case', or a regex pattern
+    convention: hyphenated_BEM
 
   Shorthand:
     enabled: true
@@ -164,7 +161,7 @@ linters:
 
   SpaceAfterPropertyColon:
     enabled: true
-    style: one_space # or 'no_space', or 'at_least_one_space', or 'aligned'
+    style: one_space
 
   SpaceAfterPropertyName:
     enabled: true
@@ -174,11 +171,11 @@ linters:
 
   SpaceAroundOperator:
     enabled: true
-    style: one_space # or 'no_space'
+    style: one_space
 
   SpaceBeforeBrace:
     enabled: true
-    style: space # or 'new_line'
+    style: space
     allow_single_line_padding: false
 
   SpaceBetweenParens:
@@ -187,7 +184,7 @@ linters:
 
   StringQuotes:
     enabled: true
-    style: single_quotes # or double_quotes
+    style: single_quotes
 
   TrailingSemicolon:
     enabled: true

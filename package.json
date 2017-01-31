@@ -1,14 +1,24 @@
 {
-  "name": "css-grid",
-  "main": "Gulpfile.js",
+  "name": "lin3s-css-grid",
+  "description": "Simple CSS grid based on Flexbox in the LIN3S way",
+  "license": "MIT",
+  "author": "LIN3S",
+  "version": "0.1.0",
+  "files": [
+    "scss",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "prebuild": "rimraf example/css",
+    "build": "node_modules/.bin/gulp example-css"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-sass": "^2.1.1",
     "gulp-scss-lint": "^0.4.0",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglifycss": "^1.0.5"
-  },
-  "scripts": {
-    "gulp": "gulp"
+    "gulp-uglifycss": "^1.0.5",
+    "rimraf": "^2.5.4"
   }
 }
