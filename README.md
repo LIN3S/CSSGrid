@@ -2,7 +2,6 @@
 > Simple CSS grid based on Flexbox in the LIN3S way.
 
 [![npm version](https://img.shields.io/npm/v/lin3s-css-grid.svg?style=flat-square)](https://www.npmjs.com/package/lin3s-css-grid)
-[![Build Status](http://img.shields.io/travis/LIN3S/CSSGrid/master.svg?style=flat-square)](https://travis-ci.org/LIN3S/CSSGrid)
 [![NPM Status](http://img.shields.io/npm/dm/lin3s-css-grid.svg?style=flat-square)](https://www.npmjs.org/package/lin3s-css-grid)
 [![devDependency Status](https://img.shields.io/david/LIN3S/CSSGrid.svg?style=flat-square)](https://david-dm.org/LIN3S/CSSGrid#info=dependencies)
 
