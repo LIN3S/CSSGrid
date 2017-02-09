@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "prebuild": "rimraf example/css",
-    "build": "node_modules/.bin/gulp example-css"
+    "build": "yarn run prebuild && node_modules/.bin/gulp example-css"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
