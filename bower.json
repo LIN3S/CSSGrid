@@ -1,0 +1,22 @@
+{
+  "name": "lin3s-css-grid",
+  "description": "Simple CSS grid based on Flexbox in the LIN3S way",
+  "license": "MIT",
+  "homepage": "https://github.com/LIN3S/CSSGrid",
+  "authors": [
+    {
+      "name": "LIN3S",
+      "email": "info@lin3s.com",
+      "homepage": "https://lin3s.com"
+    }
+  ],
+  "keywords": [
+    "adaptive-grid",
+    "fluid-grid",
+    "sass",
+    "grid",
+    "flexbox",
+    "css3",
+    "ui"
+  ]
+}

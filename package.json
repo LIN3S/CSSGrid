@@ -1,14 +1,36 @@
 {
   "name": "lin3s-css-grid",
   "description": "Simple CSS grid based on Flexbox in the LIN3S way",
-  "license": "MIT",
-  "author": "LIN3S",
   "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "adaptive-grid",
+    "fluid-grid",
+    "sass",
+    "grid",
+    "flexbox",
+    "css3",
+    "ui"
+  ],
+  "authors": [
+    {
+      "name": "LIN3S",
+      "email": "info@lin3s.com",
+      "homepage": "https://lin3s.com"
+    }
+  ],
   "files": [
     "scss",
     "LICENSE",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LIN3S/CSSGrid"
+  },
+  "bugs": {
+    "url": "https://github.com/LIN3S/CSSGrid/issues"
+  },
   "scripts": {
     "prebuild": "rimraf example/css",
     "build": "yarn run prebuild && node_modules/.bin/gulp example-css"
