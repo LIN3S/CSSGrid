@@ -1,0 +1,11 @@
+/**
+ * Copyright (c) 2016-present LIN3S <info@lin3s.com>
+ *
+ * LIN3S CSS Grid - Simple CSS grid based on Flexbox in the LIN3S way.
+ *
+ * @version v0.2.0
+ * @link    https://github.com/LIN3S/CSSGrid
+ * @author  LIN3S <info@lin3s.com>
+ *
+ * @license MIT
+ */
