@@ -1,7 +1,7 @@
 {
   "name": "lin3s-css-grid",
   "description": "Simple CSS grid based on Flexbox in the LIN3S way",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "keywords": [
     "adaptive-grid",

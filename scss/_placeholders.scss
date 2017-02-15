@@ -20,7 +20,7 @@
 
 %grid__row--fluid {
   @extend %grid__row;
-  max-width: $fluid-row-width + $column-gutter;
+  max-width: $row-width + $column-gutter;
 }
 
 %grid__row--fluid-one-column {

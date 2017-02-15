@@ -46,13 +46,13 @@ $column-count: 12 !default;
 $column-gutter: 30px !default;
 $row-padding: 15px !default;
 
-$fluid-row-width: 1290 !default;
+$row-width: 1290 !default;
 
 $adaptive-row-small-width: 666 !default;
 $adaptive-row-medium-width: 666 !default;
 $adaptive-row-large-width: 930 !default;
 $adaptive-row-xlarge-width: 1170 !default;
-$adaptive-row-xxlarge-width: $fluid-row-width;
+$adaptive-row-xxlarge-width: $row-width;
 
 $grid: (
   'adaptive': (

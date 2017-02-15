@@ -28,13 +28,23 @@ The best practice is to create a row.scss component that wraps all the grid gene
 following code:
 
 ```scss
-$grid-row-type: 'adaptive';
-$grid-row-column-count: 12;
+$grid-type: 'adaptive'; // also, it can be fluid
+
+$row-padding: 15px;
+$row-width: 1290;
+
+$column-count: 12;
+$column-gutter: 30px;
 
 $small-cols: 6;
 $medium-cols: 3, 4, 6;
 $large-cols: 1, 2, 3, 4, 6;
 $xlarge-cols: 6;
+
+$small-breakpoint: 640;
+$medium-breakpoint: 1024;
+$large-breakpoint: 1279;
+$xlarge-breakpoint: 1440;
 
 @import '../../node_modules/lin3s-css-grid/scss/row';
 ```

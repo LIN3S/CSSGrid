@@ -13,18 +13,17 @@
 @import 'mixins';
 @import 'variables';
 
-$grid-row-type: 'adaptive' !default;
-$grid-row-column-count: 12 !default;
+$grid-type: 'adaptive' !default;
 
 $small-cols: 6 !default;
 $medium-cols: 3, 4, 6 !default;
 $large-cols: 1, 2, 3, 4, 6 !default;
 $xlarge-cols: 6 !default;
 
-@include grid__row('.row', $grid-row-type);
+@include grid__row('.row', $grid-type);
 
 .row__column {
-  @include grid__column($grid-row-column-count);
+  @include grid__column($column-count);
 }
 
 .row .row {
