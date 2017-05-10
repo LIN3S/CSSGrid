@@ -1,11 +1,11 @@
-#CSSGrid
+# CSSGrid
 > Simple CSS grid based on Flexbox in the LIN3S way.
 
 [![npm version](https://img.shields.io/npm/v/lin3s-css-grid.svg?style=flat-square)](https://www.npmjs.com/package/lin3s-css-grid)
 [![NPM Status](http://img.shields.io/npm/dm/lin3s-css-grid.svg?style=flat-square)](https://www.npmjs.org/package/lin3s-css-grid)
 [![devDependency Status](https://img.shields.io/david/LIN3S/CSSGrid.svg?style=flat-square)](https://david-dm.org/LIN3S/CSSGrid#info=dependencies)
 
-##Installation
+## Installation
 The recommended and the most suitable way to install is through *Yarn*:
 ```bash
 $ yarn add lin3s-css-grid
@@ -49,5 +49,5 @@ $xlarge-breakpoint: 1440;
 @import '../../node_modules/lin3s-css-grid/scss/row';
 ```
 
-##Licensing Options
+## Licensing Options
 [![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg?style=flat-square)](https://github.com/LIN3S/CSSGrid/blob/master/LICENSE)
